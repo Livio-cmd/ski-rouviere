@@ -92,14 +92,38 @@
                     padding: 100px 0 !important;
                 }
 
-                .row {
-                    flex-direction: row !important;
+                .team-list{
+                    align-items: center;
                 }
 
                 .worker{
                     width: 100% !important;
-                    min-width: 100% !important;
+                    min-width: none !important;
                     max-width: none !important;
+
+                    flex-direction: row !important;
+
+                    padding: 10px !important;
+                    margin: 0 !important;
+
+                    .img-container{
+                        width: 100% !important;
+                        max-width: 100vw !important;
+                        height: fit-content !important;
+
+                        img{
+                            width: 100px !important;
+                            height: 100px !important;
+                            border-radius: 100%;
+                        }
+                    }
+
+                    .content{
+                        flex-direction: row !important;
+
+                        margin: 0 !important;
+                        padding: 0 !important;
+                    }
                 }
             }
 

@@ -154,7 +154,7 @@ input:checked + label .bar:last-child {
   top: 0;
   right: 0;
   z-index: 12;
-  width: 50px;
+  width: 85px;
   margin-right: 10px;
 }
 
@@ -482,13 +482,32 @@ footer .container {
   main #team h2 {
     padding: 100px 0 !important;
   }
-  main #team .row {
-    flex-direction: row !important;
+  main #team .team-list {
+    align-items: center;
   }
   main #team .worker {
     width: 100% !important;
-    min-width: 100% !important;
+    min-width: none !important;
     max-width: none !important;
+    flex-direction: row !important;
+    padding: 10px !important;
+    margin: 0 !important;
+  }
+  main #team .worker .img-container {
+    width: 100% !important;
+    max-width: 100vw !important;
+    height: -moz-fit-content !important;
+    height: fit-content !important;
+  }
+  main #team .worker .img-container img {
+    width: 100px !important;
+    height: 100px !important;
+    border-radius: 100%;
+  }
+  main #team .worker .content {
+    flex-direction: row !important;
+    margin: 0 !important;
+    padding: 0 !important;
   }
   main #contact {
     width: calc(100% + 20px);
