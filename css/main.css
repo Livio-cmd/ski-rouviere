@@ -154,7 +154,7 @@ input:checked + label .bar:last-child {
   top: 0;
   right: 0;
   z-index: 12;
-  width: 85px;
+  width: 65px;
   margin-right: 10px;
 }
 
@@ -451,12 +451,11 @@ footer .container {
     transform: none !important;
   }
   header {
-    justify-content: flex-start !important;
+    justify-content: center !important;
     height: 100vh !important;
     min-height: 100vh !important;
   }
   header .container {
-    margin-top: 10vh;
     padding: 0 10px;
   }
   header p {

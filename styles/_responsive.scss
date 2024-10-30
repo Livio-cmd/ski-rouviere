@@ -52,13 +52,11 @@
         }
 
         header{
-            justify-content: flex-start !important;
+            justify-content: center !important;
             height: 100vh !important;
             min-height: 100vh !important;
 
             .container{
-                margin-top: 10vh;
-
                 padding: 0 10px;
             }
 
