@@ -508,6 +508,9 @@ footer .container {
     margin: 0 !important;
     padding: 0 !important;
   }
+  main #team .worker .content img {
+    width: 30px !important;
+  }
   main #contact {
     width: calc(100% + 20px);
     margin-left: -10px;
