@@ -462,6 +462,8 @@ footer .container {
     max-width: none !important;
     text-align: center;
     margin: 0 auto;
+    font-size: 4vw !important;
+    font-weight: 500;
   }
   main {
     margin-top: 10px;
@@ -483,6 +485,7 @@ footer .container {
   }
   main #team .team-list {
     align-items: center;
+    padding: 0 !important;
   }
   main #team .worker {
     width: 100% !important;
@@ -499,8 +502,8 @@ footer .container {
     height: fit-content !important;
   }
   main #team .worker .img-container img {
-    width: 100px !important;
-    height: 100px !important;
+    width: 60px !important;
+    height: 60px !important;
     border-radius: 100%;
   }
   main #team .worker .content {
