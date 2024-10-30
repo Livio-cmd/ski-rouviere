@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/main.css">
+</head>
+
+<body>
+
+    <input type="checkbox" id="hamburger" style="display: none;">
+    <label class="mobile col" for="hamburger">
+        <div class="bar"></div>
+        <div class="bar"></div>
+        <div class="bar"></div>
+    </label>
+    <img id="mobile-logo" class="mobile" src="./assets/svg/logo.svg" alt="Logo de la MDL">
+
+    <nav class="row active" >
+        <img draggable="false" id="logo" src="./assets/svg/logo.svg" alt="Logo du lycee rouviere">
+
+        <ul class="row">
+            <a onclick="closeNav()" href="#before" class="link">A propos</a>
+            <a onclick="closeNav()" href="#photos" class="link">Photos</a>
+            <a onclick="closeNav()" href="#!" class="link">Contact</a>
+            <a onclick="closeNav()" href="#!" class="button red">Reserver</a>
+        </ul>
+    </nav>
+
+    <header>
+
+        <div class="overlay"></div>
+        <video autoplay muted loop id="myVideo">
+            <source src="./assets/videos/video-bg.mp4" type="video/mp4">
+        </video>
+
+        <div class="container col">
+
+            <h1>Voyagez avec la MDL</h1>
+            <p>
+                Bienvenue sur le site du voyage au ski de la Maison des Lycéens ! Inscrivez-vous dès maintenant pour
+                vivre une aventure inoubliable de glisse et de convivialité. Retrouvez toutes les infos pratiques pour
+                profiter pleinement de cette sortie exceptionnel !
+            </p>
+            <a href="#!" class="button white">Réserver</a>
+
+        </div>
+
+    </header>
+
+    <main class="col">
+
+        <div class="wrapped">
+
+            <section id="tarifs">
+                <div class="container row">
+                    <div class="left"><img draggable="false" src="./assets/images/ski1.webp"
+                            alt="Image de deux personnes au ski"></div>
+                    <div class="right col">
+                        <h2>C'est pareil pour tous !</h2>
+                        <span>50€ / personne</span>
+                        <a href="#!" class="button red">Je veux y aller</a>
+                    </div>
+                </div>
+            </section>
+
+            <section id="before" class="col">
+
+                <img src="./assets/svg/mountains.svg" alt="" style="width: 150px;">
+                <h2 class="article-title">Une journée inoubliable</h2>
+
+                <p>
+                    Rejoignez-nous pour une aventure inoubliable au ski ! Les retours exceptionnels de l'année précédente
+                    témoignent des moments mémorables vécus par tous. Ce voyage est synonyme d'amusement à l'état pur,
+                    accessible à tous ceux qui savent skier en autonomie. Préparez-vous à glisser, à rire et à créer des
+                    souvenirs inoubliables en pleine montagne !
+                </p>
+
+                <ul class="row">
+                    <div class="col">
+                        <img src="./assets/svg/adventure.svg" alt="">
+                        <span>Orcières Merlette 1800</span>
+                    </div>
+                    <div class="col">
+                        <img src="./assets/svg/ski.svg" alt="">
+                        <span>Ski / Snow / Luge</span>
+                    </div>
+                    <div class="col">
+                        <img src="./assets/svg/people.svg" alt="">
+                        <span>Rencontres</span>
+                    </div>
+                    <div class="col">
+                        <img src="./assets/svg/safe.svg" alt="">
+                        <span>Sécurité</span>
+                    </div>
+                </ul>
+
+            </section>
+
+            <section id="photos" class="row">
+                <div class="column col"></div>
+                <div class="column col"></div>
+                <div class="column col"></div>
+            </section>
+
+            <section id="contact">
+                <div class="container col">
+                    <h2>Nous contacter</h2>
+                    <ul class="row">
+                        <a href="#!"><img src="./assets/svg/instagram.svg" alt=""></a>
+                        <a href="#!"><img src="./assets/svg/gmail.svg" alt=""></a>
+                    </ul>
+                </div>
+            </section>
+
+            <section id="team">
+                <h2>La team 2024 - 2025 !</h2>
+
+                <div class="team-list row">
+
+                    <div class="worker row">
+
+                        <div class="img-container"><img draggable="false" src="./assets/images/livio.jpg"
+                                alt="Image de membre du bureau"></div>
+                        <div class="content row">
+                            <div class="col">
+                                <span class="role" style="color: rgb(255, 234, 117)">President</span>
+                                <h3>Semeraro Livio</h3>
+                            </div>
+                            <img draggable="false" src="./assets/svg/ceo.svg" alt="icone du president">
+
+                        </div>
+                    </div>
+
+                    <div class="row worker">
+                        <div class="img-container"><img draggable="false" src="./assets/images/livio.jpg"
+                                alt="Image de membre du bureau"></div>
+                        <div class="content row">
+                            <div class="col">
+                                <span class="role" style="color: rgb(117, 227, 255)">Secretaire</span>
+                                <h3>Lily Manera</h3>
+                            </div>
+                            <img draggable="false" src="./assets/svg/doc.svg" alt="icone du president">
+
+                        </div>
+                    </div>
+
+                    <div class="row worker">
+                        <div class="img-container"><img draggable="false" src="./assets/images/livio.jpg"
+                                alt="Image de membre du bureau"></div>
+                        <div class="content row">
+                            <div class="col">
+                                <span class="role" style="color: rgb(255, 117, 117)">CPE</span>
+                                <h3>Joelle Andreani</h3>
+                            </div>
+                            <img draggable="false" src="./assets/svg/cpe.svg" alt="icone du president">
+
+                        </div>
+                    </div>
+
+                    <div class="row worker">
+                        <div class="img-container"><img draggable="false" src="./assets/images/livio.jpg"
+                                alt="Image de membre du bureau"></div>
+                        <div class="content row">
+                            <div class="col">
+                                <span class="role" style="color: rgb(62, 168, 103)">INFIRMIERE</span>
+                                <h3>Aniesse jsp</h3>
+                            </div>
+                            <img draggable="false" src="./assets/svg/cross.svg" alt="icone du president">
+
+                        </div>
+                    </div>
+
+                    <div class="row worker">
+                        <div class="img-container"><img draggable="false" src="./assets/images/livio.jpg"
+                                alt="Image de membre du bureau"></div>
+                        <div class="content row">
+                            <div class="col">
+                                <span class="role" style="color: rgb(255, 234, 117)">tresorier</span>
+                                <h3>Alexandre chose</h3>
+                            </div>
+                            <img draggable="false" src="./assets/svg/bank.svg" alt="icone du president">
+
+                        </div>
+                    </div>
+
+                    <div class="row worker">
+                        <div class="img-container"><img draggable="false" src="./assets/images/livio.jpg"
+                                alt="Image de membre du bureau"></div>
+                        <div class="content row">
+                            <div class="col">
+                                <span class="role" style="color: rgb(255, 234, 117)">tresorier</span>
+                                <h3>Leo Gilbert</h3>
+                            </div>
+                            <img draggable="false" src="./assets/svg/bank.svg" alt="icone du president">
+
+                        </div>
+                    </div>
+
+
+                </div>
+            </section>
+
+
+        </div>
+
+        <footer>
+            <div class="container row">
+
+                <div class="left col">
+                    <img src="./assets/svg/logo.svg" alt="Logo du la MDL">
+                    <span>© 2024-2025 par Semeraro Livio.</span>
+                </div>
+
+                <div class="right">
+                    <div class="row">
+                        <ul class="col">
+                            <a href="#before" class="link">A propos</a>
+                            <a href="#photos" class="link">Photos</a>
+                            <a href="#!" class="link">Contact</a>
+                        </ul>
+                        <ul class="col">
+                            <a href="!#" class="link">Instagram</a>
+                        </ul>
+
+                        <ul class="col">
+                            <a href="!#" class="button red">Réserver</a>
+                        </ul>
+                    </div>
+                </div>
+
+            </div>
+        </footer>
+
+    </main>
+
+    <script type="text/javascript" defer>
+
+        const columns = document.querySelectorAll('.column');
+        const ham = document.querySelector('#hamburger');
+        const chkbox = document.querySelector('input[type="checkbox"]');
+        var i = 0;
+
+        let preventNav = false;
+
+
+        const nav = document.querySelector('nav');
+
+        let previousValue = 0;
+
+
+        columns.forEach((item) => {
+            for (let i = 0; i < 3; i++) {
+
+                var DOM_img = document.createElement("img");
+                DOM_img.src = `https://picsum.photos/${Math.floor(Math.random() * 300) + 300}/${Math.floor(Math.random() * 300) + 300}`;
+
+                item.appendChild(DOM_img);
+
+            }
+        });
+
+        function closeNav() {
+            chkbox.checked = true;
+        }
+
+        function listenner() {
+            if ( window.pageYOffset < previousValue ){
+                // nav.style.transform = "translateY(0)";
+                nav.style.opacity = "1";
+                nav.style.visibility = "visible";
+                previousValue = window.pageYOffset;
+            }else{
+                // nav.style.transform = "translateY(-100%)";
+                nav.style.opacity = "0";
+                nav.style.visibility = "hidden";
+                previousValue = window.pageYOffset;
+            }
+        }
+
+        function disableNav() {
+            if(window.innerWidth >= 800){
+                window.addEventListener('scroll', listenner);
+            }else{
+                window.removeEventListener('scroll', listenner);
+            }
+        }
+
+        disableNav();
+
+        window.addEventListener('resize', () => {
+            nav.style.opacity = "1";
+            nav.style.visibility = "visible";
+            disableNav();
+        })
+
+    </script>
+
+</body>
+
+</html>
