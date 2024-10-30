@@ -465,6 +465,9 @@ footer .container {
     font-size: 4vw !important;
     font-weight: 500;
   }
+  header h1 {
+    text-align: center;
+  }
   main {
     margin-top: 10px;
   }
