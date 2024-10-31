@@ -28,7 +28,6 @@ nav.active {
 label.mobile {
     width: 100%;
     height: fit-content;
-    padding: 0 !important;
     margin: 0 !important;
 
     background-color: #1c1c1c;
@@ -38,7 +37,7 @@ label.mobile {
     left: 0;
 
     z-index: 12;
-    padding: 10px 0 10px 10px !important;
+    padding: 20px 0 20px 10px !important;
 
     cursor: pointer;
 
