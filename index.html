@@ -240,7 +240,6 @@
 
         const columns = document.querySelectorAll('.column');
         const ham = document.querySelector('#hamburger');
-        const chkbox = document.querySelector('input[type="checkbox"]');
         var i = 0;
 
         let preventNav = false;
@@ -263,7 +262,7 @@
         });
 
         function closeNav() {
-            chkbox.checked = true;
+            ham.checked = false;
         }
 
         function listenner() {
