@@ -76,4 +76,7 @@ input[type=text]:focus {
   p {
     text-align: center !important;
   }
+  h1, .warning {
+    padding-bottom: 50px;
+  }
 }/*# sourceMappingURL=reserver.css.map */
