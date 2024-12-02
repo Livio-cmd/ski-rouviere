@@ -62,6 +62,23 @@
 
     <script type="text/javascript" src="./script.js" defer></script>
 
+    <script type="text/javascript" defer>
+        const nav = document.querySelector('nav');
+        const main = document.querySelector('main');
+        const navLabel = document.querySelector('label');
+
+        const navHeight = nav.getBoundingClientRect().height;
+        const navLabelHeight = navLabel.getBoundingClientRect().height;
+
+        if ( (navHeight > 100) ){
+            main.style.marginTop = `${ navLabelHeight * 2 }px`;
+        }else{
+            main.style.marginTop = `${ navHeight * 2 }px`;
+        }
+
+
+    </script>
+
 </body>
 
 </html>
