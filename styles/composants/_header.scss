@@ -36,6 +36,8 @@ header {
         z-index: 1;
         object-fit: cover;
         object-position: center;
+
+        transition: transform 0s;
     }
 
     video {

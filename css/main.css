@@ -51,25 +51,25 @@ body a.white:hover {
   color: white;
   background-color: transparent;
 }
-body a.dark {
+body a.dark, body input.dark {
   background-color: white;
   color: #1c1c1c;
   padding: 15px 44px;
   outline: 1px solid #1c1c1c;
   outline-offset: -1px;
 }
-body a.dark:hover {
+body a.dark:hover, body input.dark:hover {
   outline-color: transparent;
   color: white;
   background-color: #1c1c1c;
 }
-body a.red {
+body a.red, body button.red {
   background-color: rgb(255, 41, 41);
   color: #1c1c1c;
   padding: 15px 44px;
   outline: none;
 }
-body a.red:hover {
+body a.red:hover, body button.red:hover {
   background-color: rgba(255, 41, 41, 0.8);
 }
 body .link:hover {
@@ -190,6 +190,7 @@ header video, header .overlay {
      object-fit: cover;
   -o-object-position: center;
      object-position: center;
+  transition: transform 0s;
 }
 header video {
   width: 100%;
@@ -256,6 +257,9 @@ main #tarifs {
   width: 100%;
   margin-bottom: 0 !important;
   padding-top: 0 !important;
+  border-radius: 15px 15px 0 0;
+  overflow: hidden;
+  transition: transform 0s;
 }
 main #tarifs * {
   color: white;

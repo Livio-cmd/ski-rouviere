@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>MDL Rouviere</title>
     <link rel="stylesheet" href="./css/main.css">
 </head>
 
@@ -24,8 +24,8 @@
         <ul class="row">
             <a onclick="closeNav()" href="#before" class="link">A propos</a>
             <a onclick="closeNav()" href="#photos" class="link">Photos</a>
-            <a onclick="closeNav()" href="#!" class="link">Contact</a>
-            <a onclick="closeNav()" href="#!" class="button red">Reserver</a>
+            <a onclick="closeNav()" href="#contact" class="link">Contact</a>
+            <a onclick="closeNav()" href="./reserver.html" class="button red">Reserver</a>
         </ul>
     </nav>
 
@@ -33,7 +33,7 @@
 
         <div class="overlay"></div>
         <video autoplay muted loop id="myVideo">
-            <source src="./assets/videos/video-bg.mp4" type="video/mp4">
+            <source id="header-video" src="./assets/videos/video-bg.mp4" type="video/mp4">
         </video>
 
         <div class="container col">
@@ -44,7 +44,7 @@
                 vivre une aventure inoubliable de glisse et de convivialité. Retrouvez toutes les infos pratiques pour
                 profiter pleinement de cette sortie exceptionnel !
             </p>
-            <a href="#!" class="button white">Réserver</a>
+            <a href="./reserver.html" class="button white">Réserver</a>
 
         </div>
 
@@ -61,7 +61,7 @@
                     <div class="right col">
                         <h2>C'est pareil pour tous !</h2>
                         <span>50€ / personne</span>
-                        <a href="#!" class="button red">Je veux y aller</a>
+                        <a href="./reserver.html" class="button red">Je veux y aller</a>
                     </div>
                 </div>
             </section>
@@ -237,14 +237,14 @@
                         <ul class="col">
                             <a href="#before" class="link">A propos</a>
                             <a href="#photos" class="link">Photos</a>
-                            <a href="#!" class="link">Contact</a>
+                            <a href="#contact" class="link">Contact</a>
                         </ul>
                         <ul class="col">
                             <a target="_blank" href="https://www.instagram.com/m.d.l._rouviere/" class="link">Instagram</a>
                         </ul>
 
                         <ul class="col">
-                            <a href="!#" class="button red">Réserver</a>
+                            <a href="./reserver.html" class="button red">Réserver</a>
                         </ul>
                     </div>
                 </div>
@@ -254,66 +254,7 @@
 
     </main>
 
-    <script type="text/javascript" defer>
-
-        const columns = document.querySelectorAll('.column');
-        const ham = document.querySelector('#hamburger');
-        var i = 0;
-
-        let preventNav = false;
-
-
-        const nav = document.querySelector('nav');
-
-        let previousValue = 0;
-
-
-        /* columns.forEach((item) => {
-            for (let i = 0; i < 3; i++) {
-
-                var DOM_img = document.createElement("img");
-                DOM_img.src = `https://picsum.photos/${Math.floor(Math.random() * 300) + 300}/${Math.floor(Math.random() * 300) + 300}`;
-
-                item.appendChild(DOM_img);
-
-            }
-        }); */
-
-        function closeNav() {
-            ham.checked = false;
-        }
-
-        function listenner() {
-            if ( window.pageYOffset < previousValue ){
-                // nav.style.transform = "translateY(0)";
-                nav.style.opacity = "1";
-                nav.style.visibility = "visible";
-                previousValue = window.pageYOffset;
-            }else{
-                // nav.style.transform = "translateY(-100%)";
-                nav.style.opacity = "0";
-                nav.style.visibility = "hidden";
-                previousValue = window.pageYOffset;
-            }
-        }
-
-        function disableNav() {
-            if(window.innerWidth >= 800){
-                window.addEventListener('scroll', listenner);
-            }else{
-                window.removeEventListener('scroll', listenner);
-            }
-        }
-
-        disableNav();
-
-        window.addEventListener('resize', () => {
-            nav.style.opacity = "1";
-            nav.style.visibility = "visible";
-            disableNav();
-        })
-
-    </script>
+    <script type="text/javascript" src="./script.js" defer></script>
 
 </body>
 
