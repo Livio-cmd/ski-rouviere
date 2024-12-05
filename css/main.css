@@ -209,7 +209,7 @@ main {
   position: absolute;
   background-color: white;
 }
-main .wrapped {
+main #main-container {
   transform: translateY(-125px);
   margin: 0 auto;
 }
@@ -326,8 +326,7 @@ main #photos .column img:hover {
   opacity: 0.5;
 }
 main #team {
-  width: calc(100% + 380px);
-  margin-left: -190px;
+  align-items: center;
 }
 main #team h2 {
   margin: 0 auto;
@@ -335,60 +334,12 @@ main #team h2 {
   width: fit-content;
   padding-bottom: 160px;
 }
-main #team .team-list {
-  flex-wrap: wrap;
+main #team .wrapped {
   width: 100%;
-  justify-content: center;
-  gap: 30px;
-  margin: 0 auto;
-  padding: 0 30px;
 }
-main #team .team-list * {
-  color: white;
-}
-main #team .team-list .worker {
-  background-color: #1c1c1c;
-  cursor: pointer;
-  height: 30vh;
-  max-height: 250px;
-  flex: 0 0 calc(33.333333% - 60px);
-  justify-content: space-between;
-  align-items: center;
-}
-main #team .team-list .worker:hover {
-  box-shadow: 6px 6px 6px rgba(28, 28, 28, 0.4117647059);
-  transform: scale(1.012);
-}
-main #team .team-list .worker .img-container {
-  max-width: 33.333333%;
-  min-width: 150px;
+main #team .wrapped img {
   width: 100%;
-  height: 100%;
-}
-main #team .team-list .worker .img-container img {
-  width: 100%;
-  height: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
-  -o-object-position: top;
-     object-position: top;
-}
-main #team .team-list .worker .content {
-  align-items: center;
-  width: -moz-fit-content;
-  width: fit-content;
-  margin-right: 30px;
-  margin-left: 10px;
-}
-main #team .team-list .worker .content img {
-  width: 50px;
-  margin-left: 30px;
-}
-main #team .team-list .worker .content .role {
-  text-transform: uppercase;
-  font-size: 1.5vw;
-  letter-spacing: 0.12rem;
-  font-weight: bold;
+  max-width: 100%;
 }
 
 footer {
